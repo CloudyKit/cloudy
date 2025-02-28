@@ -47,7 +47,7 @@ func DispatchNext(context *Context, name string, writer http.ResponseWriter, req
 	context.Name = name
 	context.Response = writer
 	context.Request = request
-	context.Parameters = parameter
+	context.Params = parameter
 	context.Registry = registry
 	context.handlers = handlers
 	if context.Request.Body != nil {

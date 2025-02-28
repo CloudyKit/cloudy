@@ -53,11 +53,11 @@ type Context struct {
 
 	handlers []Handler
 
-	Response   http.ResponseWriter // Response Writer passed by the router
-	Parameters router.Parameter    // Route Registry passed by the router
-	body       io.ReadCloser
-	bodyBytes  []byte
-	bodyReady  bool
+	Response  http.ResponseWriter // Response Writer passed by the router
+	Params    router.Parameter    // Route Registry passed by the router
+	body      io.ReadCloser
+	bodyBytes []byte
+	bodyReady bool
 }
 
 func (c *Context) SendJSONStatusCode(statusCode int, v any) error {
@@ -117,9 +117,9 @@ func (c *Context) RedirectStatus(urlStr string, httpStatus int) {
 	http.Redirect(c.Response, c.Request, urlStr, httpStatus)
 }
 
-// GetURLParameter returns a parameter from the url route, GetURLParameter is shortcut for Context.Parameters.ByName method
+// GetURLParameter returns a parameter from the url route, GetURLParameter is shortcut for Context.Params.Get method
 func (c *Context) GetURLParameter(name string) string {
-	return c.Parameters.ByName(name)
+	return c.Params.Get(name)
 }
 
 // GetPostValue  returns a form value from the request, GetPostValue is shortcut for Context.Request.Form.Get method

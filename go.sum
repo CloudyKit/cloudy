@@ -1,6 +1,4 @@
-github.com/CloudyKit/framework v0.0.0-20230427205542-86833b7e4cc0 h1:qPt51/AEHKmZZZSvfOI+3TabR3VlQVMME4pKC5qYh2o=
-github.com/CloudyKit/framework v0.0.0-20230427205542-86833b7e4cc0/go.mod h1:o6iFtJRWMSR6JbA+AH4n8li3ELxP9+XXMLpIDMl9cJM=
-github.com/CloudyKit/router v0.0.0-20170501012743-15c4ed71df81 h1:yPqoZlWqkEpom78++E2PnDiBIwWQ4udG6QiqMEDrK1s=
-github.com/CloudyKit/router v0.0.0-20170501012743-15c4ed71df81/go.mod h1:C5dpOyEQ8OAubgEx/spN9JbnY+P6BrRZ0wzSkJfoJb4=
+github.com/CloudyKit/router v1.0.1 h1:TSupHnhz//2OUGUMf9xmgiDYpIFCNOs/D3D0dOwidJs=
+github.com/CloudyKit/router v1.0.1/go.mod h1:F25rrVIIBgnfHfaxblTahwx8zatO8/Y4aXGPigGPShU=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

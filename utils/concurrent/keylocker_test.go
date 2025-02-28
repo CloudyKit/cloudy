@@ -23,7 +23,7 @@
 package concurrent_test
 
 import (
-	"github.com/CloudyKit/framework/concurrent"
+	"github.com/CloudyKit/cloudy/utils/concurrent"
 	"sync"
 	"testing"
 	"time"

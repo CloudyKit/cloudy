@@ -60,7 +60,7 @@ type Context struct {
 	bodyReady bool
 }
 
-func (c *Context) SendJSONStatusCode(statusCode int, v any) error {
+func (c *Context) SendJSONWithStatus(v any, statusCode int) error {
 
 	c.Response.Header().Set("Content-Type", "application/json")
 	if statusCode == 0 {
@@ -71,7 +71,7 @@ func (c *Context) SendJSONStatusCode(statusCode int, v any) error {
 }
 
 func (c *Context) SendJSON(v any) error {
-	return c.SendJSONStatusCode(http.StatusOK, v)
+	return c.SendJSONWithStatus(v, http.StatusOK)
 }
 
 func (c *Context) GoContext() context.Context {
